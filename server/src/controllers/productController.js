@@ -60,15 +60,5 @@ module.exports = {
                 .status(500)
                 .json({ message: "Erro ao buscar produtos." });
         }
-
-        // const productView = await product.findOne({ code: code });
-
-        // if (productView) {
-        //     return res.json(productView);
-        // }
-
-        // return res.status(401).json({
-        //     message: "Não foi encontrado nenhum produto com estes parâmetros!",
-        // });
     },
 };
