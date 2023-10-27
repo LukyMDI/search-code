@@ -40,6 +40,12 @@ module.exports = {
     async read(req, res) {
         const { query } = req.query;
 
+        if (!query) {
+            return res.status(400).json({
+                message: "Você precisa inserir algum parâmetro de busca.",
+            });
+        }
+
         let filter = {};
 
         const isNumeric = !isNaN(query);
@@ -64,7 +70,7 @@ module.exports = {
         } catch (error) {
             return res
                 .status(500)
-                .json({ message: "Erro ao buscar produtos." });
+                .json({ message: "Erro interno ao buscar os produtos." });
         }
     },
 
