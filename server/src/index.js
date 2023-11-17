@@ -12,7 +12,7 @@ const app = express();
 
 // Configuração para o CORS
 const corsOption = {
-    origin: "https://search-code-main.vercel.app",
+    origin: process.env.BASE_URL,
     credentials: true,
 };
 
