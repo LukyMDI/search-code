@@ -12,7 +12,7 @@ const app = express();
 
 // Configuração para o CORS
 const corsOption = {
-    origin: process.env.BASE_URL,
+    origin: "http://localhost:3000",
     credential: true,
 };
 
