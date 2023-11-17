@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    list-style: none;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    margin-top: 100px;
+}
+
+body {
+    background-color: rgb(0, 128, 255);
+}
+
+body,
+input,
+button,
+textarea {
+    font-family: "Roboto", sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.modal-style form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-style .input-modal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-modal input {
+    margin: 5px 0px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.modal-style .button-model button {
+    margin: 15px 5px 0px 5px;
+    padding: 5px;
+    /* border-radius: 5px; */
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-style .button-model button#button-create {
+    background-color: rgb(0, 162, 255);
+}
+
+.modal-style .button-model button#button-delete {
+    background-color: red;
+}
+
+.modal-style .button-model button[type="button"] {
+    background-color: rgb(0, 175, 0);
+}
